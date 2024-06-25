@@ -4,9 +4,9 @@
 For this project, you will write a smart contract to create your own token on a local HardHat network. Once you have your contract, you should be able to use remix to interact with it. From remix, the contract owner should be able to mint tokens to a provided address. Any user should be able to burn and transfer tokens.
 ## Introduction
 
-Welcome to the Token (MUK) repository! This repository contains the Solidity smart contract code for the MUK token, an ERC-20 compatible token designed for various purposes. MUK tokens can be used for transactions, rewards, and other activities within an ecosystem.
+Welcome to the My Token repository! This repository contains the Solidity smart contract code for the PTH token, an ERC-20 compatible token designed for various purposes. PTH tokens can be used for transactions, rewards, and other activities within an ecosystem.
 
-This README file provides an overview of the MUK token contract and includes instructions on how to deploy the contract to the local Hardhat test network using Remix Connect Localhost and how to interact with it using Remix with Hardhat provider.
+This README file provides an overview of the PTH token contract and includes instructions on how to deploy the contract to the local Hardhat test network using Remix Connect Localhost and how to interact with it using Remix with Hardhat provider.
 ## Description
 
 The purpose of this project is to enable users to have full control over their own token by creating a customizable ERC20 token contract. Users can set the name, symbol, and total supply of their token during deployment. The contract owner has the ability to mint new tokens and distribute them to specific addresses. Users can transfer their tokens to other addresses, allowing for peer-to-peer transactions. Additionally, users can burn their tokens if they no longer need them, effectively reducing the token supply.
@@ -15,22 +15,9 @@ By providing a flexible and customizable token contract, this project empowers i
 
 The contract owner has special privileges and is the only address allowed to mint new tokens. Other addresses can interact with the contract by transferring tokens and burning their own tokens.
 
-Contract Name: Token
+Contract Name: my Token
 
-State Variables:
 
-# name: A public string variable representing the name of the token
-# symbol: A public string variable representing the symbol of the token ("MUK").
-
-# decimals: A public uint8 variable representing the number of decimal places for token balance representation (18 decimals).
-
-# totalSupply: A public uint256 variable representing the total supply of tokens.
-
-# balances: A private mapping that maps addresses to their corresponding token balances.
-
-# allowances: A private mapping that maps addresses to allowances granted by token holders to spend tokens on their behalf.
-
-# owner: A public address variable representing the owner of the token contract.
 ## Getting Started
 
 ### Installing
@@ -67,7 +54,7 @@ To run the contract, follow these steps:
 * Play with your contract in remix!!
 * ## Interacting with the Contract using Remix with Hardhat Provider
 
-After deploying the MUK token contract to the local Hardhat test network, you can interact with the contract using Remix with Hardhat provider. Here are the steps to get started:
+After deploying the PTH token contract to the local Hardhat test network, you can interact with the contract using Remix with Hardhat provider. Here are the steps to get started:
 
 1. Open the [Remix](https://remix.ethereum.org/) online IDE in your browser.
 
@@ -81,12 +68,9 @@ After deploying the MUK token contract to the local Hardhat test network, you ca
 
 6. You can now interact with the RUK token contract through the provided functions.
 
-   - Use the `balanceOf` function to check the token balance of a specific address.
-   - Use the `transfer` function to send MUK tokens from your address to another address.
+   - Use the `burn` function to reduce the token balance of a specific address.
+   - Use the `transfer` function to send PTH tokens from your address to another address.
    - Use the `mint` function (accessible only to the contract owner) to mint
-
- new RUK tokens.
-   - Use the `burn` function to burn a specific amount of your RUK tokens.
 
 7. Set the required parameters for each function and click the corresponding button to execute the transaction.
 
